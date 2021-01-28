@@ -1,0 +1,50 @@
+.navbar{
+ 
+    .navbar-brand{
+        margin-right: 100px;
+
+    }
+    .navbar-nav{
+        line-height: 1.625;
+       
+        .nav-item{
+
+            .nav-link{
+           font-family: $primary-font;
+           font-weight: 700;
+           color: $title-color;
+           margin-right: 55px;
+
+           
+            }
+       &.has-children{
+           position: relative;
+           .nav-link{
+               &::after{
+                   content: '+';
+                   color: $secondary-color;
+                   font-size: 18px;
+                   padding: 5px
+               }
+           }
+       }
+       .sub-menu{
+           display: none;
+       }
+    
+    
+    }
+    }
+    .cart-login{
+        padding-top: 10px;
+        float: right;
+     
+        list-style: none;
+        color: $icon-color;
+        .cart{
+         padding-right: 35px;
+          
+        }
+       
+    }
+}
