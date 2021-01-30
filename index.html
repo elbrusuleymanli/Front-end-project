@@ -28,20 +28,20 @@
                   <li class="nav-item has-children">
                     
                     <a class="nav-link"href="#">Home</a>
-                    <span class="plus"></span>
-                   <ul class="dropdown">
+                  
+                   <ul class="dropdown ">
                      <li><a href="">Home Page 1</a></li>
                      <li><a href="">Home Page 2</a></li>
                      <li><a href="">Home Page 3</a></li>
                      <li><a href="">Home Page 4</a></li>
                    </ul>
                  </li>
-                    <li class="nav-item">
+                    <li class="nav-item ">
                     <a class="nav-link" href="#">About</a>
                      </li>
                   <li class="nav-item has-children ">
                     <a class="nav-link"href="#">Course</a>
-                    <span class="plus"></span>
+                   
                     <ul class="dropdown">
                      <li><a href="">Course</a></li>
                      <li><a href="">Course Details</a></li>
@@ -97,8 +97,11 @@
     </header>
 
     <main>
-        <section id="intro">
-           
+          <section id="banner" class="banner-section">
+            <span class="banner-dot-square position-absolute dot-square1"></span>
+            <span class="banner-dot-square position-absolute dot-square2"></span>
+            <span class="banner-dot-square position-absolute dot-square3"></span>
+            <span class="banner-dot-square position-absolute dot-square4"></span>
         </section>
     </main>
 
@@ -109,20 +112,74 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="loginModalLabel">Modal title</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="head-text">
+              <a href="">
+                <img src="/assets/image/nav-images/logo-orange.png" alt="">
+              </a>
+              <p>Boamco laboris nisi ut aliquip ex ea commodo conseq nderit in voluptate velit esse</p>
+            </div>
           </div>
           <div class="modal-body">
-            ...
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <div class="sign-login-tab">
+              <div class="tab-btn">
+                <ul class="btn-area">
+                  <li class="item">
+                    <button class="left">Login</button>
+                  </li>
+                  <li class="item">
+                    <button class="right">Sign Up</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="tab-content">
+              <div id="login" class="tab-active show">
+                <div class="active-content-area">
+                  <form action="#">
+                    <input type="text" placeholder="Username or email">
+                    <input type="text" placeholder="Password">
+                <div class="login-save">
+                  <span>
+                    <input type="checkbox">
+                    Remember me
+                  </span>
+                  <a href="">Forget Password?</a>
+                </div>
+                <button type="submit">Submit</button>
+               </form>
+               <p>Don’t have any account?
+               <a href="">SignUp</a>
+              </p>
+              </div> 
+            </div>
+            <div id="sign-up" class="tab-active">
+              <div class="sign-up-content">
+                <form action="#">
+                  <input type="text" placeholder="First Name">
+                  <input type="text" placeholder="Last Name">
+                  <input type="text" placeholder="Email adress">
+                  <input type="text" placeholder="Username">
+                  <input type="text" placeholder="Password">
+                  <input type="text" placeholder="Conform password">
+                  <div class="signup-label clearfix">
+                    <span>
+                      <input type="checkbox">
+                      By clicking signup you are agree to our terms of service
+                    </span>
+                  </div>
+                  <button type="submit">Submit</button>
+                </form>
+                <p>
+                  Already have an account? 
+                  <a href="">Log in</a>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
+ </div>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
