@@ -1,13 +1,24 @@
 $(document).ready(function () {
 
 $(".left").click(function(){
-$(".active-content-area").fadeIn();
-$(this).css("background","blue")
-// $("#login").addClass(".show");
-
+    $(".sign-up-content").hide();
+    $(".active-content-area").show();
+    $(this).css({"background":"blue","color":"white","font-weight":"bold"});
+    $(".right").removeAttr('style');
     
- $("#sign-up").fadeOut(".show");
+
 
 });
+$(".right").click(function(){
+    $(".active-content-area").hide();
+    $(".left").removeAttr('style');
+    $(".sign-up-content").show();
+    $(this).css({"background":"blue","color":"white","font-weight":"bold"});
+    $(".left").css({"background":"none","color":"black"});
+   
+    
+   
+   
+    });
 
 });

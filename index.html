@@ -1,122 +1,775 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/img/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link rel="stylesheet" href="/assets/css/animation.css" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="assets/img/favicon.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
-    <link rel="stylesheet" href="/assets/css/style.min.css">
+    <link rel="stylesheet" href="/assets/css/style.min.css" />
+
     <title>Front-End Project</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light ">
-            <div class="container">
-              <a class="navbar-brand" href="#">
-                  <img src="/assets/image/nav-images/brand-logo.png" alt="">
-              </a>
-              
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                 
-                 
-                  <li class="nav-item has-children">
-                    
-                    <a class="nav-link"href="#">Home</a>
-                  
-                   <ul class="dropdown ">
-                     <li><a href="">Home Page 1</a></li>
-                     <li><a href="">Home Page 2</a></li>
-                     <li><a href="">Home Page 3</a></li>
-                     <li><a href="">Home Page 4</a></li>
-                   </ul>
-                 </li>
-                    <li class="nav-item ">
-                    <a class="nav-link" href="#">About</a>
-                     </li>
-                  <li class="nav-item has-children ">
-                    <a class="nav-link"href="#">Course</a>
-                   
-                    <ul class="dropdown">
-                     <li><a href="">Course</a></li>
-                     <li><a href="">Course Details</a></li>
-                    </ul>
-                 </li>
-                 <li class="nav-item has-children ">
-                  <a class="nav-link"href="#">Pages</a>
-                  <ul class="dropdown">
-                   <li><a href="">Gallery</a></li>
-                   <li><a href="">Contact</a></li>
-                   <li><a href="">Event</a></li>
-                   <li><a href="">Event Details</a></li>
-                   <li><a href="">Faq</a></li>
-                   <li><a href="">404</a></li>
-                 </ul>
-               </li>
-               <li class="nav-item has-children">
-                <a class="nav-link"href="#">Blog</a>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="/assets/image/nav-images/brand-logo.png" alt="" />
+          </a>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item has-children">
+                <a class="nav-link" href="#">Home</a>
+
                 <ul class="dropdown">
-                 <li><a href="">Blog 1</a></li>
-                 <li><a href="">Blog 2</a></li>
-                 <li><a href="">Blog Details 1</a></li>
-                 <li><a href="">Blog Details 2</a></li>
-               </ul>
-             </li>
-             <li class="nav-item has-children">
-              <a class="nav-link"href="#">Instructor</a>
-              <ul class="dropdown">
-               <li><a href="">Instructor</a></li>
-               <li><a href="">Instructor Details</a></li>
-              </ul>
-           </li>
-        </ul>
-                <ul class="process">
-                  <li class="cart">
-                   <a href="">
-                    <i class="fas fa-shopping-cart"></i>
-                  </a>
-                  </li>
-                  <span>|</span>
-                  <li class="user">
-                    <a href="" data-bs-toggle="modal" data-bs-target="#loginModal">
-                    <i class="fas fa-user"></i>
-                  </a>
-                  </li>
+                  <li><a href="">Home Page 1</a></li>
+                  <li><a href="">Home Page 2</a></li>
+                  <li><a href="">Home Page 3</a></li>
+                  <li><a href="">Home Page 4</a></li>
                 </ul>
-              </div>
-            </div>
-          </nav>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item has-children">
+                <a class="nav-link" href="#">Course</a>
 
-
-
+                <ul class="dropdown">
+                  <li><a href="">Course</a></li>
+                  <li><a href="">Course Details</a></li>
+                </ul>
+              </li>
+              <li class="nav-item has-children">
+                <a class="nav-link" href="#">Pages</a>
+                <ul class="dropdown">
+                  <li><a href="">Gallery</a></li>
+                  <li><a href="">Contact</a></li>
+                  <li><a href="">Event</a></li>
+                  <li><a href="">Event Details</a></li>
+                  <li><a href="">Faq</a></li>
+                  <li><a href="">404</a></li>
+                </ul>
+              </li>
+              <li class="nav-item has-children">
+                <a class="nav-link" href="#">Blog</a>
+                <ul class="dropdown">
+                  <li><a href="">Blog 1</a></li>
+                  <li><a href="">Blog 2</a></li>
+                  <li><a href="">Blog Details 1</a></li>
+                  <li><a href="">Blog Details 2</a></li>
+                </ul>
+              </li>
+              <li class="nav-item has-children">
+                <a class="nav-link" href="#">Instructor</a>
+                <ul class="dropdown">
+                  <li><a href="">Instructor</a></li>
+                  <li><a href="">Instructor Details</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="process">
+              <li class="cart">
+                <a href="">
+                  <i class="fas fa-shopping-cart"></i>
+                </a>
+              </li>
+              <span>|</span>
+              <li class="user">
+                <a href="" data-bs-toggle="modal" data-bs-target="#loginModal">
+                  <i class="fas fa-user"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <main>
-          <section id="banner" class="banner-section">
-            <span class="banner-dot-square position-absolute dot-square1"></span>
-            <span class="banner-dot-square position-absolute dot-square2"></span>
-            <span class="banner-dot-square position-absolute dot-square3"></span>
-            <span class="banner-dot-square position-absolute dot-square4"></span>
-        </section>
+      <section id="banner" class="banner-section">
+        <span class="banner-dot-square position-absolute dot-square1"></span>
+        <span class="banner-dot-square position-absolute dot-square2"></span>
+        <span class="banner-dot-square position-absolute dot-square3"></span>
+        <span class="banner-dot-square position-absolute dot-square4"></span>
+        <div class="banner-content">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-7">
+                <div class="banner-text">
+                  <div class="banner-tag">
+                    <span>During COVID-19</span>
+                    <p>We emphasize on health & sanitise issues</p>
+                  </div>
+                  <h1 class="cd-headline letters scale">
+                    Gathering the brightest minds for a
+                    <span class="cd-words-wrapper">
+                      <b class="is-visible">better-world.</b>
+                      <b> Helping-Hand.</b>
+                      <b> Make-Idea.</b>
+                    </span>
+                  </h1>
+                  <p class="text">
+                    Collaborate Consulting exists to find the place where to
+                    being seemingly disparate interests meet. This undergraduate
+                    course teaches students what it was like.
+                  </p>
+                  <div class="banner-wrap">
+                    <div class="banner-btn">
+                      <a href="">All Courses</a>
+                    </div>
+                    <div class="banner-play">
+                      <a
+                        data-fancybox="video"
+                        data-type="iframe"
+                        data-src="https://www.youtube.com/embed/LkJZPIy_M9E?autoplay=1"
+                        class="video-box"
+                        href="https://www.youtube.com/watch?v=LkJZPIy_M9E"
+                      >
+                        <i class="fas fa-play"></i>
+                        <span class="circle border-wrap1"></span>
+                        <span class="circle border-wrap2"></span>
+                        <span class="circle border-wrap3"></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="invisible">Yle</div>
+                </div>
+              </div>
+              <div class="col-lg-5">
+                <div class="banner-image">
+                  <img src="/assets/image/main-cover/banner.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="banner-search-select">
+        <div class="container">
+          <div class="banner-search-form">
+            <span
+              class="banner-search-shape1 position-absolute"
+              data-parallax='{"x" : 70}'
+              ><img src="assets/img/cr-shape1.png" alt=""
+            /></span>
+            <span
+              class="banner-search-shape2 position-absolute"
+              data-parallax='{"x" : -70}'
+              ><img src="assets/img/cr-shape2.png" alt=""
+            /></span>
+            <form action="#">
+              <div class="select-option-wrap">
+                <div class="banner-select-option">
+                  <select>
+                    <option data-display="Course Type">Course Type</option>
+                    <option value="1">Weekly</option>
+                    <option value="2">Monthly</option>
+                    <option value="4">Yearly</option>
+                  </select>
+                </div>
+                <div class="banner-select-option">
+                  <select>
+                    <option data-display="Language ">Language</option>
+                    <option value="1">English</option>
+                    <option value="2">German</option>
+                    <option value="4">Spanish</option>
+                  </select>
+                </div>
+                <div class="banner-select-option">
+                  <select>
+                    <option data-display="Skill">Skill</option>
+                    <option value="1">Developer</option>
+                    <option value="2">Designer</option>
+                    <option value="4">Marketer</option>
+                  </select>
+                </div>
+              <button type="submit">
+                <i class="fas fa-search"></i> Search
+              </button>
+             
+              </div>
+             
+            </form>
+          </div>
+          <div class="select-apply">
+            <p>
+              Are you qualified to teach our Students? <a href="">Apply Now</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <section id="categories">
+        <div class="category-body">
+          <div class="title">
+            <h1>Categories</h1>
+          </div>
+          <div class="sub-title">
+            <h4>_ Top Categories _</h4>
+          </div>
+          <div class="center-title">
+            <h2>We have many courses in our top Categories</h2>
+          </div>
+          <div class="row">
+            <div class="col-lg-10">
+              <div
+                id="yl-category-slide"
+                class="yl-category-slide-content owl-carousel"
+              >
+                <div
+                  class="yl-category-img-text yl-headline position-relative wow fadeInUp"
+                  data-wow-delay="0ms"
+                  data-wow-duration="1500ms"
+                >
+                  <div class="yl-category-text-icon">
+                    <div class="yl-category-icon float-left">
+                      <i class="flaticon-atom"></i>
+                    </div>
+                    <div class="yl-category-text">
+                      <h3><a href="#">Computer Science</a></h3>
+                      <span>14 Courses</span>
+                    </div>
+                  </div>
+                  <div class="yl-category-img text-center">
+                    <img src="/assets/image/owl-image/1.jpg" alt="" />
+                  </div>
+                  <div class="yl-category-hover-icon text-center">
+                    <a href="#"><i class="fas fa-plus"></i></a>
+                  </div>
+                </div>
+                <div
+                  class="yl-category-img-text yl-headline position-relative wow fadeInUp"
+                  data-wow-delay="200ms"
+                  data-wow-duration="1500ms"
+                >
+                  <div class="yl-category-text-icon">
+                    <div class="yl-category-icon float-left">
+                      <i class="flaticon-design"></i>
+                    </div>
+                    <div class="yl-category-text">
+                      <h3><a href="#">UI/UX Design</a></h3>
+                      <span>14 Courses</span>
+                    </div>
+                  </div>
+                  <div class="yl-category-img text-center">
+                    <img src="/assets/image/owl-image/2.jpg" alt="" />
+                  </div>
+                  <div class="yl-category-hover-icon text-center">
+                    <a href="#"><i class="fas fa-plus"></i></a>
+                  </div>
+                </div>
+                <div
+                  class="yl-category-img-text yl-headline position-relative wow fadeInUp"
+                  data-wow-delay="400ms"
+                  data-wow-duration="1500ms"
+                >
+                  <div class="yl-category-text-icon">
+                    <div class="yl-category-icon float-left">
+                      <i class="flaticon-global-network"></i>
+                    </div>
+                    <div class="yl-category-text">
+                      <h3><a href="#">Language Learning</a></h3>
+                      <span>14 Courses</span>
+                    </div>
+                  </div>
+                  <div class="yl-category-img text-center">
+                    <img src="/assets/image/owl-image/3.jpg" alt="" />
+                  </div>
+                  <div class="yl-category-hover-icon text-center">
+                    <a href="#"><i class="fas fa-plus"></i></a>
+                  </div>
+                </div>
+                <div
+                  class="yl-category-img-text yl-headline position-relative wow fadeInUp"
+                  data-wow-delay="600ms"
+                  data-wow-duration="1500ms"
+                >
+                  <div class="yl-category-text-icon">
+                    <div class="yl-category-icon float-left">
+                      <i class="flaticon-atom"></i>
+                    </div>
+                    <div class="yl-category-text">
+                      <h3><a href="#">Computer Science</a></h3>
+                      <span>14 Courses</span>
+                    </div>
+                  </div>
+                  <div class="yl-category-img text-center">
+                    <img src="assets/img/ct1.jpg" alt="" />
+                  </div>
+                  <div class="yl-category-hover-icon text-center">
+                    <a href="#"><i class="fas fa-plus"></i></a>
+                  </div>
+                </div>
+                <div class="yl-category-img-text yl-headline position-relative">
+                  <div class="yl-category-text-icon">
+                    <div class="yl-category-icon float-left">
+                      <i class="flaticon-design"></i>
+                    </div>
+                    <div class="yl-category-text">
+                      <h3><a href="#">UI/UX Design</a></h3>
+                      <span>14 Courses</span>
+                    </div>
+                  </div>
+                  <div class="yl-category-img text-center">
+                    <img src="assets/img/ct2.jpg" alt="" />
+                  </div>
+                  <div class="yl-category-hover-icon text-center">
+                    <a href="#"><i class="fas fa-plus"></i></a>
+                  </div>
+                </div>
+                <div class="yl-category-img-text yl-headline position-relative">
+                  <div class="yl-category-text-icon">
+                    <div class="yl-category-icon float-left">
+                      <i class="flaticon-global-network"></i>
+                    </div>
+                    <div class="yl-category-text">
+                      <h3><a href="#">Language Learning</a></h3>
+                      <span>14 Courses</span>
+                    </div>
+                  </div>
+                  <div class="yl-category-img text-center">
+                    <img src="assets/img/ct3.jpg" alt="" />
+                  </div>
+                  <div class="yl-category-hover-icon text-center">
+                    <a href="#"><i class="fas fa-plus"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="course">
+        <div class="course-body">
+          <div class="titles">
+            <div class="main-title">
+              <h1>Course</h1>
+            </div>
+            <div class="sub-title">
+              <h4>_ Our Popular Courses _</h4>
+            </div>
+            <div class="large-title">
+              <h2>
+                The largest selection of courses for learning for students
+              </h2>
+            </div>
+            <div class="courses-images">
+              <div class="row">
+                <div class="col-lg-3">
+                  <div class="item1">
+                    <img src="/assets/image/lesson-images/1.jpg" alt="" />
+                    <div class="price">
+                      <span>Course Fee:</span>
+                      <span>$59</span>
+                      <h3>$39</h3>
+                    </div>
+                    <div class="profession">
+                      <p class="">
+                        <a href=""> User Experience Research & Design </a>
+                      </p>
+                    </div>
+                    <div class="lessons">
+                      <a href="">
+                        <i class="fas-fa-file"> </i>
+                        14 lessons
+                      </a>
+                      <a href="">
+                        <i class="fas fa-user"></i>
+                        20 students
+                      </a>
+                    </div>
+                    <div class="star">
+                      <div class="vote-rate">
+                        <ul>
+                          <li>
+                            <i class="fas fa-star"></i>
+                          </li>
+
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                        </ul>
+                        <span>(12 Votes)</span>
+                      </div>
+                    </div>
+                    <div class="course-btn">
+                      <a href="">
+                        <i class="fas-fa-chevron-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="item1">
+                    <img src="/assets/image/lesson-images/2.jpg" alt="" />
+                    <div class="price">
+                      <span>Course Fee:</span>
+                      <span>$59</span>
+                      <h3>$39</h3>
+                    </div>
+                    <div class="profession">
+                      <p class="">
+                        <a href=""> User Experience Research & Design </a>
+                      </p>
+                    </div>
+                    <div class="lessons">
+                      <a href="">
+                        <i class="fas-fa-file"> </i>
+                        14 lessons
+                      </a>
+                      <a href="">
+                        <i class="fas fa-user"></i>
+                        20 students
+                      </a>
+                    </div>
+                    <div class="star">
+                      <div class="vote-rate">
+                        <ul>
+                          <li>
+                            <i class="fas fa-star"></i>
+                          </li>
+
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                        </ul>
+                        <span>(12 Votes)</span>
+                      </div>
+                    </div>
+                    <div class="course-btn">
+                      <a href="">
+                        <i class="fas-fa-chevron-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="item1">
+                    <img src="/assets/image/lesson-images/3.jpg" alt="" />
+                    <div class="price">
+                      <span>Course Fee:</span>
+                      <span>$59</span>
+                      <h3>$39</h3>
+                    </div>
+                    <div class="profession">
+                      <p class="">
+                        <a href=""> User Experience Research & Design </a>
+                      </p>
+                    </div>
+                    <div class="lessons">
+                      <a href="">
+                        <i class="fas-fa-file"> </i>
+                        14 lessons
+                      </a>
+                      <a href="">
+                        <i class="fas fa-user"></i>
+                        20 students
+                      </a>
+                    </div>
+                    <div class="star">
+                      <div class="vote-rate">
+                        <ul>
+                          <li>
+                            <i class="fas fa-star"></i>
+                          </li>
+
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                        </ul>
+                        <span>(12 Votes)</span>
+                      </div>
+                    </div>
+                    <div class="course-btn">
+                      <a href="">
+                        <i class="fas-fa-chevron-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="item1">
+                    <img src="/assets/image/lesson-images/4.jpg" alt="" />
+                    <div class="price">
+                      <span>Course Fee:</span>
+                      <span>$59</span>
+                      <h3>$39</h3>
+                    </div>
+                    <div class="profession">
+                      <p class="">
+                        <a href=""> User Experience Research & Design </a>
+                      </p>
+                    </div>
+                    <div class="lessons">
+                      <a href="">
+                        <i class="fas-fa-file"> </i>
+                        14 lessons
+                      </a>
+                      <a href="">
+                        <i class="fas fa-user"></i>
+                        20 students
+                      </a>
+                    </div>
+                    <div class="star">
+                      <div class="vote-rate">
+                        <ul>
+                          <li>
+                            <i class="fas fa-star"></i>
+                          </li>
+
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                        </ul>
+                        <span>(12 Votes)</span>
+                      </div>
+                    </div>
+                    <div class="course-btn">
+                      <a href="">
+                        <i class="fas-fa-chevron-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-3">
+                  <div class="item1">
+                    <img src="/assets/image/lesson-images/5.jpg" alt="" />
+                    <div class="price">
+                      <span>Course Fee:</span>
+                      <span>$59</span>
+                      <h3>$39</h3>
+                    </div>
+                    <div class="profession">
+                      <p class="">
+                        <a href=""> User Experience Research & Design </a>
+                      </p>
+                    </div>
+                    <div class="lessons">
+                      <a href="">
+                        <i class="fas-fa-file"> </i>
+                        14 lessons
+                      </a>
+                      <a href="">
+                        <i class="fas fa-user"></i>
+                        20 students
+                      </a>
+                    </div>
+                    <div class="star">
+                      <div class="vote-rate">
+                        <ul>
+                          <li>
+                            <i class="fas fa-star"></i>
+                          </li>
+
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                        </ul>
+                        <span>(12 Votes)</span>
+                      </div>
+                    </div>
+                    <div class="course-btn">
+                      <a href="">
+                        <i class="fas-fa-chevron-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="item1">
+                    <img src="/assets/image/lesson-images/6.jpg" alt="" />
+                    <div class="price">
+                      <span>Course Fee:</span>
+                      <span>$59</span>
+                      <h3>$39</h3>
+                    </div>
+                    <div class="profession">
+                      <p class="">
+                        <a href=""> User Experience Research & Design </a>
+                      </p>
+                    </div>
+                    <div class="lessons">
+                      <a href="">
+                        <i class="fas-fa-file"> </i>
+                        14 lessons
+                      </a>
+                      <a href="">
+                        <i class="fas fa-user"></i>
+                        20 students
+                      </a>
+                    </div>
+                    <div class="star">
+                      <div class="vote-rate">
+                        <ul>
+                          <li>
+                            <i class="fas fa-star"></i>
+                          </li>
+
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                        </ul>
+                        <span>(12 Votes)</span>
+                      </div>
+                    </div>
+                    <div class="course-btn">
+                      <a href="">
+                        <i class="fas-fa-chevron-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="item1">
+                    <img src="/assets/image/lesson-images/7.jpg" alt="" />
+                    <div class="price">
+                      <span>Course Fee:</span>
+                      <span>$59</span>
+                      <h3>$39</h3>
+                    </div>
+                    <div class="profession">
+                      <p class="">
+                        <a href=""> User Experience Research & Design </a>
+                      </p>
+                    </div>
+                    <div class="lessons">
+                      <a href="">
+                        <i class="fas-fa-file"> </i>
+                        14 lessons
+                      </a>
+                      <a href="">
+                        <i class="fas fa-user"></i>
+                        20 students
+                      </a>
+                    </div>
+                    <div class="star">
+                      <div class="vote-rate">
+                        <ul>
+                          <li>
+                            <i class="fas fa-star"></i>
+                          </li>
+
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                        </ul>
+                        <span>(12 Votes)</span>
+                      </div>
+                    </div>
+                    <div class="course-btn">
+                      <a href="">
+                        <i class="fas-fa-chevron-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="item1">
+                    <img src="/assets/image/lesson-images/8.jpg" alt="" />
+                    <div class="price">
+                      <span>Course Fee:</span>
+                      <span>$59</span>
+                      <h3>$39</h3>
+                    </div>
+                    <div class="profession">
+                      <p class="">
+                        <a href=""> User Experience Research & Design </a>
+                      </p>
+                    </div>
+                    <div class="lessons">
+                      <a href="">
+                        <i class="fas-fa-file"> </i>
+                        14 lessons
+                      </a>
+                      <a href="">
+                        <i class="fas fa-user"></i>
+                        20 students
+                      </a>
+                    </div>
+                    <div class="star">
+                      <div class="vote-rate">
+                        <ul>
+                          <li>
+                            <i class="fas fa-star"></i>
+                          </li>
+
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                        </ul>
+                        <span>(12 Votes)</span>
+                      </div>
+                    </div>
+                    <div class="course-btn">
+                      <a href="">
+                        <i class="fas-fa-chevron-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="banner-btn">
+                <a href="">All Courses</a>
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+    
 
-    <footer>
-
-    </footer>
-    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <footer></footer>
+    <div
+      class="modal fade"
+      id="loginModal"
+      tabindex="-1"
+      aria-labelledby="loginModalLabel"
+      aria-hidden="true"
+    >
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
             <div class="head-text">
               <a href="">
-                <img src="/assets/image/nav-images/logo-orange.png" alt="">
+                <img src="/assets/image/nav-images/logo-orange.png" alt="" />
               </a>
-              <p>Boamco laboris nisi ut aliquip ex ea commodo conseq nderit in voluptate velit esse</p>
+              <p>
+                Boamco laboris nisi ut aliquip ex ea commodo conseq nderit in
+                voluptate velit esse
+              </p>
             </div>
           </div>
           <div class="modal-body">
@@ -136,56 +789,63 @@
               <div id="login" class="tab-active show">
                 <div class="active-content-area">
                   <form action="#">
-                    <input type="text" placeholder="Username or email">
-                    <input type="text" placeholder="Password">
-                <div class="login-save">
-                  <span>
-                    <input type="checkbox">
-                    Remember me
-                  </span>
-                  <a href="">Forget Password?</a>
+                    <input type="text" placeholder="Username or email" />
+                    <input type="text" placeholder="Password" />
+                    <div class="login-save">
+                      <span>
+                        <input type="checkbox" />
+                        Remember me
+                      </span>
+                      <a href="">Forget Password?</a>
+                    </div>
+                    <button type="submit">Submit</button>
+                  </form>
+                  <p>
+                    Don’t have any account?
+                    <a href="">SignUp</a>
+                  </p>
                 </div>
-                <button type="submit">Submit</button>
-               </form>
-               <p>Don’t have any account?
-               <a href="">SignUp</a>
-              </p>
-              </div> 
-            </div>
-            <div id="sign-up" class="tab-active">
-              <div class="sign-up-content">
-                <form action="#">
-                  <input type="text" placeholder="First Name">
-                  <input type="text" placeholder="Last Name">
-                  <input type="text" placeholder="Email adress">
-                  <input type="text" placeholder="Username">
-                  <input type="text" placeholder="Password">
-                  <input type="text" placeholder="Conform password">
-                  <div class="signup-label clearfix">
-                    <span>
-                      <input type="checkbox">
-                      By clicking signup you are agree to our terms of service
-                    </span>
-                  </div>
-                  <button type="submit">Submit</button>
-                </form>
-                <p>
-                  Already have an account? 
-                  <a href="">Log in</a>
-                </p>
+              </div>
+              <div id="sign-up" class="tab-active">
+                <div class="sign-up-content">
+                  <form action="#">
+                    <input type="text" placeholder="First Name" />
+                    <input type="text" placeholder="Last Name" />
+                    <input type="text" placeholder="Email adress" />
+                    <input type="text" placeholder="Username" />
+                    <input type="text" placeholder="Password" />
+                    <input type="text" placeholder="Conform password" />
+                    <div class="signup-label clearfix">
+                      <span>
+                        <input type="checkbox" />
+                        By clicking signup you are agree to our terms of service
+                      </span>
+                    </div>
+                    <button type="submit">Submit</button>
+                  </form>
+                  <p>
+                    Already have an account?
+                    <a href="">Log in</a>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
- </div>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script src="https://kit.fontawesome.com/30032e1c2a.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.js"></script>
+    <script
+      src="https://kit.fontawesome.com/30032e1c2a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="/assets/JS/animation.js"></script>
     <script src="/assets/JS/main.js"></script>
-</body>
-
+  </body>
 </html>

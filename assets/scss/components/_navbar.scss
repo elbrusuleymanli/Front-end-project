@@ -105,7 +105,7 @@
           border-bottom: 2px solid $primary-color;
           opacity: 0;
           transition: all 0.3s ease-in-out;
-          // display: block;
+          background-color: white;
           visibility: hidden;
 
           // sub menu items
@@ -138,17 +138,7 @@
           width: 22px;
         }
 
-        // &::before {
-        //   left: 517px;
-        //   top: 52px;
-        //   width: 0px;
-        //   height: 5px;
-        //   content: "";
-        //   position: absolute;
-        //   border-radius: 30%;
-        //   background-color: #0000fe;
-        //   transition: 0.3s all ease-in-out;
-        // }
+     
       }
 
       .nav-link {
