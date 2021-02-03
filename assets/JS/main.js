@@ -34,7 +34,7 @@ $(".right").click(function(){
       });
       $(".owl-card-body ").owlCarousel({
         loop: true,
-        items: 4,
+        // items: 4,
         dots: true,
         margin: 30,
         responsive: {
@@ -48,7 +48,7 @@ $(".right").click(function(){
         },
       });
 
-      $(".owl-card").owlCarousel({
+      $(".lastes-news-slider").owlCarousel({
         loop: true,
         items: 3,
         dots: true,

@@ -17,7 +17,19 @@ h6 {
   font-family: $secondary-font;
 }
 .owl-carousel{
+  .owl-item {
+    opacity: 0;
+    transition: opacity 500ms;
+  }
+  .owl-item.active {
+    opacity: 1;
+  }
+  .owl-stage-outer {
+    overflow: visible;
+  }
   .owl-dots{
+   text-align: center;
+    margin-top: 20px;
     .owl-dot{
       width: 28px;
       height: 5px;
@@ -27,10 +39,14 @@ h6 {
       display: inline-block;
       background-color: #ececed;
       transition: 0.3s all ease-in-out;
+      
+        outline: none;
+      
     }
     .owl-dot.active{
       width: 38px;
       background-color: #0000fe;
     }
   }
+  
 }

@@ -2,11 +2,12 @@
   padding: 105px 0px 60px;
   background-color: #f7f7f7;
   position: relative;
+  overflow: hidden;
   .container {
     text-align: center;
-    .owl-card {
+    .lastes-news-slider {
       &:hover img {
-        transform: scale(1.2);
+        transform: scale(1.1) rotate(5deg);
       }
       .owl-body {
         margin: 0 auto;
@@ -14,14 +15,11 @@
         background-color: #fff;
         transition: 0.3s all ease-in-out;
         .owl-image {
-          
-            img {
+          overflow: hidden;
+          img {
             transition: 0.4s all ease-in-out;
             max-width: 100%;
             height: auto;
-
-
-
           }
         }
         .news-date {
@@ -53,10 +51,11 @@
           }
         }
         .news-text {
-          padding-top: 30px;
+          padding: 45px 25px;
+          padding-top: 10px;
           .comments {
             text-align: start;
-            padding-left: 24px;
+            
             a {
               font-size: 13px;
               font-weight: 700;
@@ -68,17 +67,18 @@
             }
           }
           .title-text {
-            padding: 45px 0;
+            text-align: left;
             h3 {
               text-align: left;
-              padding-left: 24px;
-              padding-top: 5px;
+              margin-bottom: 15px;
+              position: relative;
+              padding: 10px 0px 15px;
+              border-bottom: 2px solid #eaeaea;
+              
               color: #000;
               font-size: 24px;
               font-weight: 700;
-              margin-bottom: 15px;
-              position: relative;
-              border-bottom: 2px solid #eaeaea;
+             
               transition: 0.3s all ease-in-out;
 
               &::before {
@@ -98,7 +98,7 @@
             p {
               padding-bottom: 14px;
               text-align: start;
-              padding-left: 25px;
+              
               color: #555555;
               font-size: 16px;
               font-weight: 400;
@@ -108,11 +108,12 @@
             .more {
               text-decoration: none;
               color: #000;
-              display: flex;
+              display: inline-block;
               font-size: 14px;
               font-weight: 700;
               transition: 0.3s all ease-in-out;
-              padding-left: 25px;
+             position: relative;
+            
 
               &:hover {
                 color: $primary-color;
@@ -129,7 +130,7 @@
                 background-color: #0000fe;
               }
               &:hover::after {
-                width: 100%;
+                width: 94px;
               }
             }
           }

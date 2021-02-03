@@ -1,3 +1,4 @@
+
 .banner-section {
   background-color: #f7f7f7;
   .banner-text {
@@ -195,21 +196,6 @@
     box-shadow: 0px 6px 13px 0px rgba(0, 0, 254, 0.25);
     animation: animationFramesTwo 18s infinite alternate;
   }
+
 }
 
-.banner-search {
-  .banner-select-option {
-    .nice-select::after {
-      top: 0px;
-      right: 20px;
-      height: auto;
-      border: none;
-      margin-top: 0;
-      font-size: 12px;
-      content: "";
-      font-weight: 900;
-      transform: rotate(0);
-      font-family: "Font Awesome 5 Free";
-    }
-  }
-}
