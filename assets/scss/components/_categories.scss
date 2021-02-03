@@ -1,5 +1,5 @@
 #categories {
-  padding: 150px 0px 100px;
+  padding: 200px 0px 100px;
   overflow: hidden;
   .category-body {
     text-align: center;
@@ -66,14 +66,19 @@
         .category-text {
           margin-bottom: 35px;
           h3 {
+            a{
             color: #fff;
             font-size: 24px;
             font-weight: 700;
             margin: 0;
             font-family: $secondary-font;
+            text-decoration: none;
           }
+        }
           span {
             color: #ababab;
+            font-family: $primary-font;
+            
           }
         }
       }
@@ -87,15 +92,17 @@
         left: 0;
         right: 0;
         height: 60px;
-        bottom: 0px;
+        bottom: 30px;
         margin: 0 auto;
         opacity: 0;
-        visibility: hidden;
+        visibility:hidden;
         line-height: 60px;
         position: absolute;
         border-radius: 100%;
         background-color: #0000fe;
         transition: 0.3s all ease-in-out;
+        display: flex;
+        justify-content: center;
 
         a {
           color: inherit;
@@ -106,11 +113,29 @@
 
             &::before {
               content: "\f067";
+              
             }
           }
         }
       }
+        .categories-anime:hover .category-icon .flaticon-atom{
+          transform: rotateY(360deg);
+
+        }
+         &:hover img{
+           filter: grayscale(100%);
+         }
+         &:hover .category-hover-icon{
+            position: absolute;
+            bottom: -20px;
+            visibility: visible;
+            opacity: 1;
+         }
+         &:hover a .fa-plus{
+           transform: rotate3d(360deg);
+         }
+    
     }
-   
+ 
   }
 }

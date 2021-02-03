@@ -1,5 +1,5 @@
 .banner-search-select {
-  top: -175px;
+  top: -63px;
   z-index: 1;
   position: relative;
   margin-bottom: -175px;
@@ -35,6 +35,8 @@
         font-family: $secondary-font;
         .nice-select{
           border: none;
+          font-size: 18px;
+          font-family: $secondary-font;
           &::after{
             top: 0px;
     right: 20px;
@@ -86,6 +88,7 @@
   .select-apply {
     color: #000;
     font-size: 15px;
+    padding-top: 30px;
 
     a {
       font-family: $primary-font;

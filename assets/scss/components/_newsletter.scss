@@ -16,6 +16,7 @@
     border-radius: 5px;
     padding: 35px 40px;
     background-color: #000;
+    color: #555555;
 
     .newsletter-text {
       h3 {
@@ -27,6 +28,7 @@
 
         span {
           color: #bbbbbb;
+          font-family: $primary-font;
           img {
             max-width: 100%;
             height: auto;
@@ -88,23 +90,7 @@
           background-color: #fff;
         }
 
-        &:hover {
-          
-          // padding: 0;
-          color: #000;
-          // border: none;
-          // width: 145px;
-          // height: 48px;
-          // font-size: 14px;
-          // font-weight: 700;
-          // position: absolute;
-          // background-color: #fff;
-          // transition: 0.3s all ease-in-out;
-          // outline: none;
-          // box-shadow: none;
-          // text-decoration: none;
-          // z-index: 1;
-          // overflow: hidden;
+       
         }
         &:hover::after {
           height: 100%;
@@ -113,4 +99,4 @@
       }
     }
   }
-}
+

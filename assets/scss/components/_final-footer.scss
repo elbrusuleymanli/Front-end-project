@@ -101,6 +101,8 @@
           padding-left: 20px;
           border: 2px solid #313131;
           background-color: transparent;
+          outline: none;
+          color: #fff;
         }
         button {
           background-color: #ff5520;
@@ -118,8 +120,8 @@
           &:hover i {
             color: #000;
           }
-          i {
-          }
+        
+          
         }
       }
       .colum-2-social {
@@ -137,8 +139,7 @@
               &:hover {
                 color: $secondary-color;
               }
-              i {
-              }
+              
             }
           }
         }

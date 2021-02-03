@@ -6,14 +6,15 @@
   .container {
     text-align: center;
     .lastes-news-slider {
-      &:hover img {
-        transform: scale(1.1) rotate(5deg);
-      }
+     
       .owl-body {
         margin: 0 auto;
         max-width: 370px;
         background-color: #fff;
         transition: 0.3s all ease-in-out;
+       
+       
+       
         .owl-image {
           overflow: hidden;
           img {
@@ -66,8 +67,7 @@
               text-decoration: none;
             }
           }
-          .title-text {
-            text-align: left;
+          
             h3 {
               text-align: left;
               margin-bottom: 15px;
@@ -133,8 +133,19 @@
                 width: 94px;
               }
             }
-          }
+          
         }
+           &:hover{
+             img{
+              transform: scale(1.1) rotate(5deg);
+             }
+           }
+            &:hover .text-title h3 a {
+               
+                color: $secondary-color;
+              }
+            }
+     
       }
     }
 
@@ -168,4 +179,4 @@
       }
     }
   }
-}
+

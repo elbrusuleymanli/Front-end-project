@@ -66,5 +66,20 @@ $(".right").click(function(){
 
       $("select").niceSelect();
 
-
+      $(window).on("scroll", function() {
+        if ($(this).scrollTop() > 70) {
+          $('.scroll-up').fadeIn();
+        } else {
+          $('.scroll-up').fadeOut();
+        }
+      });
+      $('.scroll-up').on("click", function()  {
+        $("html, body").animate({
+          scrollTop: 0
+        }, 500);
+        return false;
+      });
+      
+			
+			
 });
