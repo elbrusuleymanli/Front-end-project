@@ -140,7 +140,6 @@
       }
     }
     .invisible {
-     
       opacity: 0.05;
       z-index: 1;
       line-height: 1;
@@ -198,3 +197,19 @@
   }
 }
 
+.banner-search {
+  .banner-select-option {
+    .nice-select::after {
+      top: 0px;
+      right: 20px;
+      height: auto;
+      border: none;
+      margin-top: 0;
+      font-size: 12px;
+      content: "";
+      font-weight: 900;
+      transform: rotate(0);
+      font-family: "Font Awesome 5 Free";
+    }
+  }
+}

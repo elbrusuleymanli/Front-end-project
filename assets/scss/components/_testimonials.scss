@@ -1,9 +1,10 @@
 #testimonials {
-    padding: 105px 0px 100px;
-  .testimonials-container {
-      
+  padding: 105px 0px 100px;
+  
+  .testimonials-container{
+  position: relative; 
     .test-title {
-        position: relative;
+      
       text-align: center;
       .main-title {
         opacity: 0.1;
@@ -33,5 +34,78 @@
         padding: 15px 0px 20px;
       }
     }
+  
+    .owl-card {
+      overflow: hidden;
+      border-radius: 10px;
+      background-color: #fff;
+      padding: 40px 30px 25px;
+      transition: 0.3s all ease-in-out;
+      box-shadow: 0px 12px 35px 0px rgba(12, 12, 12, 0.6);
+    
+      position: relative;
+     
+     
+    
+  
+      &:hover{
+   transform: translateY(-20px);
+   
+      }
+     
+      
+      }
+      &:hover .brackets{
+        color: $secondary-color;
+      }
+      
+
+      .brackets {
+        top: 15px;
+        right: 15px;
+        position: absolute;
+        color: #efefef;
+        line-height: 1;
+        font-size: 30px;
+        transition: 0.3s all ease-in-out;
+      }
+      .test-text {
+        h3 {
+          font-size: 18px;
+          font-weight: 700;
+          color: #0000fe;
+          padding-bottom: 15px;
+        }
+        p {
+          color: #666666;
+        }
+      }
+      .person {
+        padding-top: 20px;
+        display: flex;
+        img {
+          width: 65px;
+          height: 65px;
+          overflow: hidden;
+          margin-right: 12px;
+          border-radius: 100%;
+          border: 3px solid $primary-color;
+        }
+        .name {
+          h4 {
+            a {
+              color: #000;
+              font-size: 14px;
+              font-weight: 700;
+              text-decoration: none;
+            }
+          }
+          span {
+            color: #888888;
+            font-size: 14px;
+          }
+        }
+      }
+    }
   }
-}
+

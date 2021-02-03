@@ -1,0 +1,170 @@
+#latest-news {
+  padding: 105px 0px 60px;
+  background-color: #f7f7f7;
+  position: relative;
+  .container {
+    text-align: center;
+    .owl-card {
+      &:hover img {
+        transform: scale(1.2);
+      }
+      .owl-body {
+        margin: 0 auto;
+        max-width: 370px;
+        background-color: #fff;
+        transition: 0.3s all ease-in-out;
+        .owl-image {
+          
+            img {
+            transition: 0.4s all ease-in-out;
+            max-width: 100%;
+            height: auto;
+
+
+
+          }
+        }
+        .news-date {
+          width: 80px;
+          height: 80px;
+          left: 7%;
+          padding-top: 13px;
+          border-radius: 3px;
+          position: absolute;
+          background-color: #000;
+          text-align: center;
+          top: 30%;
+
+          a {
+            color: #fff;
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 1.1;
+            display: inline-block;
+            font-family: $secondary-font;
+            text-decoration: none;
+            text-align: center;
+            span {
+              display: block;
+              font-size: 16px;
+              font-weight: 400;
+              font-family: $primary-font;
+            }
+          }
+        }
+        .news-text {
+          padding-top: 30px;
+          .comments {
+            text-align: start;
+            padding-left: 24px;
+            a {
+              font-size: 13px;
+              font-weight: 700;
+              margin-right: 10px;
+
+              color: $primary-color;
+              font-family: $secondary-font;
+              text-decoration: none;
+            }
+          }
+          .title-text {
+            padding: 45px 0;
+            h3 {
+              text-align: left;
+              padding-left: 24px;
+              padding-top: 5px;
+              color: #000;
+              font-size: 24px;
+              font-weight: 700;
+              margin-bottom: 15px;
+              position: relative;
+              border-bottom: 2px solid #eaeaea;
+              transition: 0.3s all ease-in-out;
+
+              &::before {
+                left: 0;
+                bottom: -1px;
+                height: 3px;
+                content: "";
+                width: 37px;
+                position: absolute;
+                background-color: #ff5520;
+              }
+              a {
+                text-decoration: none;
+                color: inherit;
+              }
+            }
+            p {
+              padding-bottom: 14px;
+              text-align: start;
+              padding-left: 25px;
+              color: #555555;
+              font-size: 16px;
+              font-weight: 400;
+              font-family: $primary-font;
+            }
+
+            .more {
+              text-decoration: none;
+              color: #000;
+              display: flex;
+              font-size: 14px;
+              font-weight: 700;
+              transition: 0.3s all ease-in-out;
+              padding-left: 25px;
+
+              &:hover {
+                color: $primary-color;
+              }
+
+              &::after {
+                left: 0;
+                bottom: 0;
+                content: "";
+                width: 0px;
+                height: 1px;
+                position: absolute;
+                transition: 0.3s all ease-in-out;
+                background-color: #0000fe;
+              }
+              &:hover::after {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .big-title {
+      p {
+        opacity: 0.1;
+        color: #53536c;
+        line-height: 1;
+        font-size: 100px;
+        font-weight: 900;
+        margin-bottom: 0;
+        text-align: center;
+        z-index: 1;
+
+        left: 0;
+        right: 0;
+        top: -67px;
+      }
+      span {
+        color: $primary-color;
+        font-size: 18px;
+        font-weight: 700;
+        font-family: $primary-font;
+      }
+      h2 {
+        color: #000;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 1.125;
+        padding: 15px 0px 20px;
+      }
+    }
+  }
+}

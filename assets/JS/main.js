@@ -16,9 +16,55 @@ $(".right").click(function(){
     $(this).css({"background":"blue","color":"white","font-weight":"bold"});
     $(".left").css({"background":"none","color":"black"});
    
-    
-   
-   
-    });
+    })
+    $(".categories-slider").owlCarousel({
+        loop: true,
+        items: 3,
+        dots: true,
+        margin: 30,
+        responsive: {
+          0: { items: 1 },
+          705: {
+            items: 2,
+          },
+          1200: {
+            items: 3,
+          },
+        },
+      });
+      $(".owl-card-body ").owlCarousel({
+        loop: true,
+        items: 4,
+        dots: true,
+        margin: 30,
+        responsive: {
+          0: { items: 1 },
+          705: {
+            items: 2,
+          },
+          1200: {
+            items: 4,
+          },
+        },
+      });
+
+      $(".owl-card").owlCarousel({
+        loop: true,
+        items: 3,
+        dots: true,
+        margin: 30,
+        responsive: {
+          0: { items: 1 },
+          705: {
+            items: 2,
+          },
+          1200: {
+            items: 3,
+          },
+        },
+      });
+
+      $("select").niceSelect();
+
 
 });
