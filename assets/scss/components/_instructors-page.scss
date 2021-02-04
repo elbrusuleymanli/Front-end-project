@@ -1,0 +1,99 @@
+#instructors-page {
+  padding: 100px 0px;
+  background-color: #f1f1f3;
+  .container {
+    max-width: 1200px;
+    .instructors-content {
+      .instructors-card {
+        text-align: center;
+        position: relative;
+
+        &:hover .instructors-text {
+            background-color: $secondary-color;
+        }
+        &:hover .instructors-text span{
+            
+                color: #fff;
+            
+        }
+        &:hover .instructors-text a{
+           
+                color: #fff;
+            
+        }
+        &:hover .instructors-text .num::after{
+            background-color: #f7815d;
+        }
+        .instructor-image {
+          width: 160px;
+          z-index: 3;
+          height: 160px;
+          bottom: -50px;
+          margin: 0 auto;
+          overflow: hidden;
+          border-radius: 50%;
+          box-shadow: 0px 6px 42px 0px rgba(47, 47, 65, 0.12);
+          position: relative;
+          img {
+            max-width: 100%;
+            height: auto;
+          }
+        }
+        .instructors-text {
+          border-radius: 6px;
+          padding: 70px 15px 30px;
+          background-color: #fff;
+          z-index: 2;
+          box-shadow: 0px 6px 38px 0px rgba(0, 0, 0, 0.4);
+          transition: 0.4s all ease-in-out;
+          position: relative;
+          h3 {
+            color: #000000;
+            font-size: 20px;
+            font-weight: 700;
+            
+            font-family: $secondary-font;
+            a {
+              text-decoration: none;
+              color: inherit;
+              transition: 0.4s all ease-in-out;
+            }
+          }
+          .prof {
+            color: #000000;
+            font-weight: 700;
+            padding: 5px 0px;
+            font-family: $secondary-font;
+            display: block;
+            font-size: 14px;
+          
+          }
+          .num {
+            color: #888888;
+
+            &::after{
+                left: 0;
+                right: 0;
+                width: 90%;
+                content: "";
+                height: 10px;
+                z-index: 1;
+                bottom: -8px;
+                margin: 0 auto;
+                position: absolute;
+                border-radius: 6px;
+                background-color: #fbfbff;
+                transition: 0.4s all ease-in-out;
+            }
+          }
+          span{
+            display: block;
+            font-size: 14px;
+            transition: 0.4s all ease-in-out;
+
+          }
+        }
+      }
+    }
+  }
+}
