@@ -47,6 +47,21 @@ $(".right").click(function(){
           },
         },
       });
+      $(".about-owl-card").owlCarousel({
+        loop: true,
+       
+        dots: true,
+        margin: 30,
+        responsive: {
+          0: { items: 1 },
+          705: {
+            items: 2,
+          },
+          1200: {
+            items: 3,
+          },
+        },
+      });
 
       $(".lastes-news-slider").owlCarousel({
         loop: true,

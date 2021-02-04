@@ -1,0 +1,80 @@
+#about-registration{
+
+.container {
+   
+  .reg-content {
+    position: relative;
+
+    display: flex;
+    background-image: url(/assets/image/education-image/1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    .text-content {
+      padding: 45px;
+      h3 {
+        font-size: 36px;
+        color: #fff;
+        font-weight: 700;
+        font-family: $primary-font;
+
+        span {
+          color: $secondary-color;
+        }
+      }
+      p {
+        color: #c6c6c6;
+        font-weight: 400;
+        font-family: $secondary-font;
+      }
+      .reg-btn {
+        position: relative;
+        width: 140px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        line-height: 55px;
+        border-radius: 40px;
+        background-color: #00a4ff;
+        z-index: 1;
+        &::after {
+          top: 0;
+          width: 0;
+          left: -40%;
+          content: "";
+          z-index: -1;
+          height: 100%;
+          position: absolute;
+          transform: skew(50deg);
+          transition-duration: 0.6s;
+          transform-origin: top left;
+          background-color: #ff5520;
+        }
+        &:hover::after {
+          height: 100%;
+          width: 150%;
+        }
+
+        a {
+          font-family: $primary-font;
+          color: #fff;
+          font-weight: 700;
+          text-decoration: none;
+          font-size: 15px;
+        }
+      }
+    }
+
+    .girl {
+      position: absolute;
+      bottom: -26px;
+      right: -8px;
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+}
