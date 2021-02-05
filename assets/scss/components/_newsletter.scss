@@ -100,3 +100,34 @@
     }
   }
 
+  @media only screen and (max-width:768px){
+    #newsletter{
+      .newsletter-content{
+        .newsletter-form{
+          padding-left: 0;
+          input{
+            max-width: none;
+          }
+          button{
+            position: unset;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width:478px){
+    #newsletter{
+      .newsletter-content{
+        .newsletter-text{
+          span{
+            img{
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+

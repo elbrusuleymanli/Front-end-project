@@ -17,6 +17,7 @@ $(".right").click(function(){
     $(".left").css({"background":"none","color":"black"});
    
     })
+    // owl carousel plugin for part of categories
     $(".categories-slider").owlCarousel({
         loop: true,
         items: 3,
@@ -24,7 +25,7 @@ $(".right").click(function(){
         margin: 30,
         responsive: {
           0: { items: 1 },
-          705: {
+          768: {
             items: 2,
           },
           1200: {
@@ -32,6 +33,7 @@ $(".right").click(function(){
           },
         },
       });
+    // owl carousel plugin for part of testimonials
       $(".owl-card-body ").owlCarousel({
         loop: true,
         // items: 4,
@@ -47,6 +49,8 @@ $(".right").click(function(){
           },
         },
       });
+    
+    // owl carousel plugin for part of about
       $(".about-owl-card").owlCarousel({
         loop: true,
        
@@ -62,8 +66,8 @@ $(".right").click(function(){
           },
         },
       });
-
-      $(".lastes-news-slider").owlCarousel({
+      // owl carousel plugin for part of latest news 
+      $(".lates-news-slider").owlCarousel({
         loop: true,
         items: 3,
         dots: true,
@@ -78,9 +82,10 @@ $(".right").click(function(){
           },
         },
       });
-
+           //plagun for select options in banner page of index
       $("select").niceSelect();
-
+          
+      //scroll to up
       $(window).on("scroll", function() {
         if ($(this).scrollTop() > 70) {
           $('.scroll-up').fadeIn();
@@ -88,20 +93,25 @@ $(".right").click(function(){
           $('.scroll-up').fadeOut();
         }
       });
+   
+
       $('.scroll-up').on("click", function()  {
         $("html, body").animate({
           scrollTop: 0
-        }, 500);
+        }, 100,"swing");
         return false;
       });
-      
+     
+     
+      //navbar fixed
+     
       $(window).scroll(function (e){
 
         if($(this).scrollTop()>84){
-          $("header nav").addClass("header-fixed");
+          $(".header-main").addClass("header-fixed");
         }
         else{
-          $("header nav").removeClass("header-fixed");
+          $(".header-main").removeClass("header-fixed");
         }
       })
 			
