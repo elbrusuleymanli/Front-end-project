@@ -95,6 +95,14 @@ $(".right").click(function(){
         return false;
       });
       
-			
+      $(window).scroll(function (e){
+
+        if($(this).scrollTop()>84){
+          $("header nav").addClass("header-fixed");
+        }
+        else{
+          $("header nav").removeClass("header-fixed");
+        }
+      })
 			
 });
