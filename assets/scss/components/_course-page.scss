@@ -3,73 +3,72 @@
   background-color: #f2f2f4;
   .container {
     max-width: 1200px;
-    .course-content{
-        padding-top: 50px;
-    .course-up-place {
-      margin-bottom: 70px;
-      .row {
-        .course-bar {
-          height: 60px;
-          line-height: 60px;
-          border-radius: 3px;
-          padding-left: 40px;
-          background-color: #fff;
-          box-shadow: 0px 0px 35px 0px rgba(12, 12, 12, 0.08);
-          .course-bar-resurs {
-            .course-bar-list {
-              margin-right: 40px;
-              float: left;
-              a {
-                color: #010101;
-                font-size: 17px;
-                position: relative;
-                padding-right: 45px;
-                transition: 0.3s all ease-in-out;
-                i {
-                  &:hover {
-                    color: $secondary-color;
+    .course-content {
+      padding-top: 50px;
+      .course-up-place {
+        margin-bottom: 70px;
+        .row {
+          .course-bar {
+            height: 60px;
+            line-height: 60px;
+            border-radius: 3px;
+            padding-left: 40px;
+            background-color: #fff;
+            box-shadow: 0px 0px 35px 0px rgba(12, 12, 12, 0.08);
+            .course-bar-resurs {
+              .course-bar-list {
+                margin-right: 40px;
+                float: left;
+                a {
+                  color: #010101;
+                  font-size: 17px;
+                  position: relative;
+                  padding-right: 45px;
+                  transition: 0.3s all ease-in-out;
+                  i {
+                    &:hover {
+                      color: $secondary-color;
+                    }
                   }
                 }
-              }
 
-              span {
-                padding-right: 20px;
-                padding-left: 7px;
-                margin-left: -29px;
-                color: #777777;
-                font-family:$primary-font ;
+                span {
+                  padding-right: 20px;
+                  padding-left: 7px;
+                  margin-left: -29px;
+                  color: #777777;
+                  font-family: $primary-font;
+                }
               }
             }
           }
-        }
-        .bar-search {
-          position: relative;
-          form {
-            input {
-              width: 100%;
-              height: 100%;
-              border: none;
-              outline: 0;
-              font-family: $primary-font;
-              
-            }
-            button {
-              top: 0;
-              right: 0;
-              color: #fff;
-              border: none;
-              height: 100%;
-              width: 160px;
-              font-weight: 700;
-              position: absolute;
-              background-color: #f4511f;
-              outline: 0;
+          .bar-search {
+            position: relative;
+            form {
+              input {
+                width: 100%;
+                height: 100%;
+                border: none;
+                outline: 0;
+                font-family: $primary-font;
+              }
+              button {
+                top: 0;
+                right: 0;
+                color: #fff;
+                border: none;
+                height: 100%;
+                width: 160px;
+                font-weight: 700;
+                position: absolute;
+                background-color: #f4511f;
+                outline: 0;
+              }
             }
           }
         }
       }
-    }
-    .cards {
+      .cards {
         padding: 25px;
         border-radius: 10px;
         padding-bottom: 65px;
@@ -79,31 +78,29 @@
         position: relative;
         margin-bottom: 20px;
         animation-name: fadeInUp;
-       
-  
+
         &:hover {
           box-shadow: 0px 6px 38px 0px rgba(0, 0, 0, 0.4);
         }
         &:hover img {
           transform: scale(1.1);
         }
-  
+
         &:hover h3 a {
           color: $secondary-color;
         }
-        &:hover .btn-right  {
+        &:hover .btn-right {
           background-color: $secondary-color !important;
-          i{
+          i {
             animation: toBottomFromTop 0.3s forwards;
           }
         }
-        
-  
+
         .course-image {
           text-align: center;
           border-radius: 5px;
           overflow: hidden;
-  
+
           img {
             vertical-align: middle;
             border-style: none;
@@ -111,11 +108,11 @@
             transition: 0.5s all ease-in-out;
           }
         }
-  
+
         .course-fee {
           margin: 10px 0px;
           float: left;
-  
+
           span {
             margin-top: 10px;
             display: inline-block;
@@ -136,7 +133,7 @@
         }
         .course-title {
           text-align: left;
-  
+
           h3 {
             color: #000;
             font-size: 18px;
@@ -172,7 +169,7 @@
         .stars {
           .rate-vote {
             float: left;
-  
+
             ul {
               display: flex;
               padding: 0;
@@ -180,11 +177,11 @@
               color: #ffc601;
               font-size: 13px;
               padding-top: 15px;
-  
+
               i {
                 padding: 2px;
               }
-  
+
               span {
                 font-size: 14px;
                 color: #171616b3;
@@ -192,7 +189,7 @@
               }
             }
           }
-  
+
           .btn-right {
             height: 30px;
             width: 30px;
@@ -203,53 +200,92 @@
             transition: 0.3s all ease-in-out;
             float: right;
             margin-top: 10px;
-  
+
             a {
               color: #fff;
               width: 100%;
               visibility: visible;
               font-size: 14px;
-             i{
-               transition: 0.4s;
-             }
-            
+              i {
+                transition: 0.4s;
+              }
             }
           }
         }
       }
     }
- .course-pagination{
-    margin-top: 15px;
-     ul{
+    .course-pagination {
+      margin-top: 15px;
+      ul {
         margin: 0;
         padding: 0;
         text-align: center;
-         li{
-            list-style: none;
+        li {
+          list-style: none;
+          display: inline-block;
+          &:hover a {
+            color: #fff;
+            background-color: $primary-color;
+          }
+          a {
+            color: #000;
+            width: 45px;
+            height: 45px;
+            font-size: 18px;
+            font-weight: 700;
+            margin: 0px 5px;
+            line-height: 45px;
             display: inline-block;
-            &:hover a{
-                 color: #fff;
-                 background-color: $primary-color;
+            font-family: $secondary-font;
+            background-color: #ffffff;
+            transition: 0.4s all ease-in-out;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 395px) {
+  #course-page {
+    .container {
+      .course-content {
+        .course-up-place {
+          .row {
+            .course-bar {
+              padding: 2px;
             }
-             a{
-                color: #000;
-                width: 45px;
-                height: 45px;
-                font-size: 18px;
-                font-weight: 700;
-                margin: 0px 5px;
-                line-height: 45px;
-                display: inline-block;
-                font-family: $secondary-font;
-                background-color: #ffffff;
-                transition: 0.4s all ease-in-out;
-                text-decoration: none;
-
-             }
-         }
-     }
- }
-
-
+          }
+        }
+      }
+    }
+  }
 }
+
+
+@media only screen and (max-width: 357px) {
+  #course-page {
+    .container {
+      .course-content {
+        .course-up-place {
+          .row {
+            .course-bar {
+              .course-bar-resurs{
+                .course-bar-list{
+                  span{
+                    padding-right: 5px;
+                    padding-left: 7px;
+                    margin-left: -50px
+
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
+
+

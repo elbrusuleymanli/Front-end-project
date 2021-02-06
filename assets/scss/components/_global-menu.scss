@@ -199,3 +199,32 @@
 
 }
 
+@media (max-width: 992px) {
+  .banner-section{
+    .banner-image{
+      img {
+       display: none;
+      }
+    }
+  }
+}
+@media (max-width: 534px) {
+  .banner-section{
+    .banner-content{
+      .container{
+        .row{
+          .col-lg-8{
+            .banner-text{
+      .banner-tag{
+         padding-right:0;
+      }
+    }
+          }
+        }
+      }
+
+      
+  }
+    }
+   
+}

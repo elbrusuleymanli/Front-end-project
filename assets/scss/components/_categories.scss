@@ -6,9 +6,7 @@
     position: relative;
     padding-bottom: 100px;
 
-    h1 {
-      font-size: 100px;
-    }
+   
     .title {
       left: 0;
       right: 0;
@@ -22,6 +20,11 @@
       text-align: center;
       position: absolute;
       font-family: $secondary-font;
+   
+    h1 {
+      font-size: 100px;
+    }
+   
     }
     h4 {
       color: $primary-color;
@@ -135,6 +138,39 @@
 
       &:hover img {
         filter: grayscale(100%);
+      }
+    }
+  }
+}
+@media (max-width: 513px) {
+  #categories{
+    .category-body{
+      .title {
+       h1{
+         font-size: 55px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 513px) {
+  #categories{
+    .category-body{
+      .sub-title {
+       h4{
+         font-size: 15px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 513px) {
+  #categories{
+    .category-body{
+      .center-title {
+       h2{
+         font-size: 20px;
+        }
       }
     }
   }

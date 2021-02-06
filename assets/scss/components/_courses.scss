@@ -60,8 +60,6 @@
 
         .fa-arrow-right {
           margin-left: 5px;
-         
-
         }
 
         &::after {
@@ -82,9 +80,9 @@
           width: 150%;
         }
       }
-      &:hover{
-        a{
-          i{
+      &:hover {
+        a {
+          i {
             animation: toBottomFromTop 0.3s forwards;
           }
         }
@@ -111,13 +109,12 @@
       &:hover h3 a {
         color: $secondary-color;
       }
-      &:hover .btn-right  {
+      &:hover .btn-right {
         background-color: $secondary-color !important;
-        i{
+        i {
           animation: toBottomFromTop 0.3s forwards;
         }
       }
-      
 
       .course-image {
         text-align: center;
@@ -229,10 +226,9 @@
             width: 100%;
             visibility: visible;
             font-size: 14px;
-           i{
-             transition: 0.4s;
-           }
-          
+            i {
+              transition: 0.4s;
+            }
           }
         }
       }
