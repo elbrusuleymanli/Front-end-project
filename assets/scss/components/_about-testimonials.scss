@@ -99,12 +99,23 @@
       }
     }
   }
-  @media only screen and (max-width: 458px) {
+  @media only screen and (max-width: 643px) {
     #about-testimonials {
       .testimonials-container {
         .test-title  {
-         p{
-           font-size: 70px;
+          .main-title {
+           font-size: 60px;
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 390px) {
+    #about-testimonials {
+      .testimonials-container {
+        .test-title  {
+          .main-title {
+           font-size: 40px;
           }
         }
       }

@@ -272,3 +272,14 @@
     opacity: 1;
   }
 }
+
+@media only screen and (max-width:768px){
+  #course{
+    .course-body{
+      .cards{
+        display: inline-block;
+      }
+    }
+
+  }
+}

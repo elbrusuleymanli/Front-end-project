@@ -1,0 +1,40 @@
+#page-404 {
+  .container {
+    max-width: 1200px;
+    .main-404 {
+      padding-top: 90px;
+      span {
+        text-align: center;
+        color: #000;
+        font-size: 36px;
+        font-family: $primary-font;
+        line-height: 1.333;
+        display: block;
+        font-weight: 700;
+      }
+    }
+    .return-404 {
+      padding: 21px 0 63px 0;
+      text-align: center !important;
+      a {
+        text-decoration: none;
+        color: #000;
+        font-weight: 700;
+        font-size: 16px;
+
+        i {
+          color: #f76652;
+        }
+      }
+    }
+    .big-image {
+      text-align: center;
+      padding-bottom: 100px;
+
+      img{
+          max-width: 100%;
+          height: auto;
+      }
+    }
+  }
+}

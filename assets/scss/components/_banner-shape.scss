@@ -124,3 +124,16 @@
       }
     }
   }
+  @media only screen and (max-width:768px){
+    .banner-search-select{
+      .container{
+        .banner-search-form{
+          form{
+            .select-option-wrap{
+              display: block !important;
+            }
+          }
+        }
+      }
+    }
+  }

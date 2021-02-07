@@ -100,7 +100,7 @@
             height: 50px;
             width: 340px;
             border: none;
-            margin: 0px 15px;
+            margin: 10px 15px;
             padding-left: 20px;
             border-radius: 8px;
             background-color: #efeff0;
@@ -131,6 +131,35 @@
             margin-left: 10px;
           }
         }
+      }
+    }
+  }
+}
+@media only screen and (max-width:511px){
+  #contact-page{
+    .container{
+      .contact-categories{
+        .category-body{
+          h1{
+            font-size: 50px;
+          }
+        }
+       
+      }
+    }
+  }
+}
+@media only screen and (max-width:420px){
+  #contact-page{
+    .container{
+      .contact-form{
+      .contact-form-area{
+        .contact-info{
+          input{
+            width: 153px;
+          }
+        }
+       }
       }
     }
   }
