@@ -1,14 +1,13 @@
 $(document).ready(function () {
-
+// login modal login
 $(".left").click(function(){
     $(".sign-up-content").hide();
     $(".active-content-area").show();
     $(this).css({"background":"blue","color":"white","font-weight":"bold"});
     $(".right").removeAttr('style');
     
-
-
 });
+// login modal sign up
 $(".right").click(function(){
     $(".active-content-area").hide();
     $(".left").removeAttr('style');
@@ -16,7 +15,15 @@ $(".right").click(function(){
     $(this).css({"background":"blue","color":"white","font-weight":"bold"});
     $(".left").css({"background":"none","color":"black"});
    
+    });
+       //faq
+    $(".nav-item").click(function(){
+      
+      $(this).css({"background":"blue"});
+      $('a').attr("color","white");
     })
+
+
     // owl carousel plugin for part of categories
     $(".categories-slider").owlCarousel({
         loop: true,

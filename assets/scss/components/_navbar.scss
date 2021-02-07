@@ -168,7 +168,12 @@
       }
     }
   }
+  // mobile version
   .mobile-btn {
+    font-size: 30px;
+    cursor: pointer;
+    text-align: center;
+    color: #e3002a;
     display: none;
   }
 }

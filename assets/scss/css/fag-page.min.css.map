@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "../components/fag-page.scss"
-    ],
-    "names": [],
-    "file": "fag-page.min.css"
-}
