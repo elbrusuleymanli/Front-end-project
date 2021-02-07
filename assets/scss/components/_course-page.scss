@@ -246,20 +246,44 @@
     }
   }
 }
-// @media only screen and (max-width: 845px) {
-//   #course-page {
-//     .container {
-//       .course-content {
-//         .row{
-//               display: inline-block !important;
-//         }
-       
-//       }
-//     }
-//   }
-// }
 
 
+@media only screen and (max-width: 768px) {
+  #course-page {
+    .container {
+      .course-content {
+        margin-left: 116px;
+      }
+    }
+  }
+  @media only screen and (max-width: 645px) {
+    #course-page {
+      .container {
+        .course-content {
+          margin-left: 59px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 528px) {
+  #course-page {
+    .container {
+      .course-content {
+        margin-left: 18px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 398px) {
+  #course-page {
+    .container {
+      .course-content {
+        margin-left: -3px;
+      }
+    }
+  }
+}
 @media only screen and (max-width: 395px) {
   #course-page {
     .container {
@@ -276,7 +300,6 @@
   }
 }
 
-
 @media only screen and (max-width: 357px) {
   #course-page {
     .container {
@@ -284,13 +307,12 @@
         .course-up-place {
           .row {
             .course-bar {
-              .course-bar-resurs{
-                .course-bar-list{
-                  span{
+              .course-bar-resurs {
+                .course-bar-list {
+                  span {
                     padding-right: 5px;
                     padding-left: 7px;
-                    margin-left: -50px
-
+                    margin-left: -50px;
                   }
                 }
               }
@@ -301,5 +323,3 @@
     }
   }
 }
-
-
